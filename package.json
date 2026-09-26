@@ -1,0 +1,9 @@
+{
+  "name": "thomas-ai",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Thomas website foundation",
+  "scripts": {
+    "check": "node --check server.js"
+  }
+}
