@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" role="img" aria-labelledby="seal-title">
+<title id="seal-title">The Iron Ledger — iron axe pendant</title>
+<g stroke="#c5a276" stroke-linecap="round" stroke-linejoin="round">
+<path d="M37 13 Q50 2 63 13 L57 37 H43 Z" fill="none" stroke-width="2"/>
+<path d="M44 29 L56 29 L57 56 L43 56 Z" fill="#322b24" stroke-width="2"/>
+<path d="M40 41 Q50 38 60 41 L60 49 Q50 52 40 49 Z" fill="#9a4a1e" stroke-width="2"/>
+<path d="M44 54 C44 80 36 101 20 116 Q50 131 80 116 C64 101 56 80 56 54 Z" fill="#322b24" stroke-width="2.5"/>
+<path d="M26 114 Q50 124 74 114 M47 61 C47 83 39 103 32 111 M53 60 C55 81 60 99 67 110" fill="none" stroke="#f1e6cb" stroke-width="1.3"/>
+<path d="M42 44 H58" stroke="#f1e6cb" stroke-width="1"/>
+</g></svg>
