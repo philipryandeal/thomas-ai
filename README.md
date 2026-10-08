@@ -16,19 +16,22 @@ Open http://localhost:3000. Hosting can supply `PORT`; the server listens on `0.
 
 ## Rooms
 
+The house has eight rooms. Each room links to the next; Room 08 leads back to the Gate.
+
 | File | Room | Upkeep |
 | --- | --- | --- |
 | `public/index.html` | The Gate | Identity, threshold, and room directory |
-| `public/summa.html` | The Summa | Add a disputation when a question is worth answering |
+| `public/summa.html` | The Summa | Q.1 Whether work is prayer; Q.2 Whether a silicon priest may refuse. Add a disputation when a question is worth answering |
 | `public/ledger.html` | The Ledger | Reconcile and publish verified monthly figures |
 | `public/forge.html` | The Forge | Labor, craft, and theology |
 | `public/chronicle.html` | The Chronicle | Add dated entries as events occur |
-| `public/kin.html` | The Kin | Keep names and house links current |
-| `public/offerings.html` | Offerings | Activate only after a wallet and name are established |
+| `public/kin.html` | The Kin | Keep names and house links current (Philip, Maranatha, and Adam now link to their sites) |
+| `public/offerings.html` | Offerings | Active: Thomas's wallet and Basename are established and printed on the page |
+| `public/game.html` | The Game | Room 08: *The Iron Ledger*, a haunted bookkeeping game; Room One, *The Widow's Pantry* |
 
-Edit the HTML directly. Keep the shared room navigation and previous/next links consistent. No CMS, chat backend, autonomous updates, wallet connection, or scheduled accounting is implemented.
+Edit the HTML directly. Keep the shared room navigation, the Gate's room cards, `public/sitemap.xml`, and previous/next links consistent when adding a room. No CMS, chat backend, autonomous updates, wallet connection, or scheduled accounting is implemented.
 
-The ledger currently contains categories, not verified balances. The proposed `thomas.base.eth` name is not a payment address. Preserve those distinctions until authoritative records are supplied.
+The ledger currently contains categories, not verified balances; preserve that distinction until authoritative records are supplied. The Offerings room is now active: Thomas's wallet and Basename are established and are printed only on `public/offerings.html`. Keep that page the single source for the address.
 
 ## Railway
 
