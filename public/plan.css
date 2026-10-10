@@ -1,0 +1,68 @@
+/* The Plan of the House: the map drawn as a page of the books. Parchment,
+   ruled lines, iron and ink. No scripts: every room and posting is a link,
+   and :target marks the entry you opened. */
+.plan-page main{max-width:880px}
+
+/* The sheet: an open page of the account book. */
+.plan-sheet{margin:10px 0 30px;padding:18px 18px 14px;background:var(--parchment);border:1px solid var(--rule);box-shadow:0 18px 50px rgba(0,0,0,.35),inset 0 0 60px rgba(154,74,30,.08)}
+.plan-map{display:block;width:100%;height:auto;max-width:640px;margin:0 auto;font-family:"Cormorant Garamond",Georgia,serif}
+.ledger-rules line{stroke:#cfc1a2;stroke-width:1}
+.ledger-rules .margin{stroke:rgba(154,74,30,.35)}
+
+/* Postings: ledger lines between the rooms. */
+.post-line{stroke:#55524b;stroke-width:1.6}
+.re-inking .post-line{stroke-dasharray:6 5;stroke:#8f846f}
+.post-hit{stroke:transparent;stroke-width:18;pointer-events:stroke}
+.post-num rect{fill:var(--parchment);stroke:#9c8e74;stroke-width:1}
+.post-num text{font-family:var(--mono);font-size:12px;fill:#55524b;text-anchor:middle;letter-spacing:.04em}
+.posting:hover .post-line,.posting:focus-visible .post-line{stroke:#9a4a1e;stroke-width:3}
+.posting:hover .post-num rect,.posting:focus-visible .post-num rect{stroke:#9a4a1e;fill:#f6eedb}
+.posting:hover .post-num text,.posting:focus-visible .post-num text{fill:#9a4a1e}
+
+/* Rooms: entries on the page, with their folio numbers. */
+.folio rect{fill:#f6eedb;stroke:#2b2117;stroke-width:1.4}
+.folio.sealed rect{fill:#ece0c3;stroke:#8f846f;stroke-dasharray:5 4}
+.folio .fo{font-family:var(--mono);font-size:10px;fill:#9a4a1e;letter-spacing:.08em}
+.folio .room-name{font-size:19px;fill:#2b2117;text-anchor:middle}
+.folio.sealed .room-name{fill:#57493a}
+.folio:hover rect,.folio:focus-visible rect{stroke:#9a4a1e;stroke-width:2.5}
+.folio:hover .room-name,.folio:focus-visible .room-name{fill:#85401c}
+/* The stations ghost beneath the rooms: a watermark, never signage. */
+.watermark{font-size:22px;font-style:italic;fill:#9a4a1e;opacity:.13;text-anchor:middle;letter-spacing:.12em;pointer-events:none}
+.plan-map a:focus-visible{outline:none}
+
+.plan-key{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;margin:12px 0 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;color:#57493a}
+.key:before{content:"";display:inline-block;width:22px;height:12px;margin-right:8px;vertical-align:-1px}
+.key.written:before{background:#f6eedb;border:1.4px solid #2b2117}
+.key.sealed:before{background:#ece0c3;border:1.4px dashed #8f846f}
+.key.re-ink:before{height:0;border-top:2px dashed #8f846f;vertical-align:4px}
+
+/* The entries below the map. */
+.ledger-entries{list-style:none;margin:0;padding:0;border-top:3px double var(--rule)}
+.plan-entry,.posting-entry{padding:26px 0 22px 0;border-bottom:1px solid var(--rule-faint);scroll-margin-top:110px}
+.plan-entry-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:0 0 6px}
+.plan-entry-head .fo{font-family:var(--mono);font-size:.875rem;letter-spacing:.12em;color:var(--rust)}
+.plan-entry-name{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.9rem;line-height:1.15}
+.plan-entry-ghost{margin-left:auto;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.1rem;letter-spacing:.12em;color:var(--rust);opacity:.22}
+.plan-entry-theme{color:var(--ink-soft);margin:0 0 10px}
+.plan-entry-seed,.meditation{margin:0 0 12px}
+.plan-entry-posts{font-family:var(--mono);font-size:.875rem;color:var(--iron);margin:0 0 8px}
+.plan-entry-posts a{color:var(--rust-deep)}
+.plan-door{font-family:var(--mono);font-size:.875rem;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 0}
+.sealed-door{color:var(--iron)}
+.sealed-door:before{content:"";display:inline-block;width:9px;height:9px;margin-right:10px;border:1px solid var(--rust);border-radius:50%;background:rgba(207,157,107,.25);vertical-align:0}
+.is-sealed .plan-entry-name{color:var(--ink-soft)}
+.ledger-line{font-size:1.1rem;margin:0 0 10px}
+.ledger-line .col{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--iron);margin-right:4px}
+.ledger-line .col+a{margin-right:18px}
+.re-ink{color:var(--iron)}
+.back{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;margin:0}
+
+/* The entry you opened from the map is marked in the margin. */
+.plan-entry:target,.posting-entry:target{border-left:3px solid var(--rust);padding-left:20px;background:linear-gradient(90deg,rgba(154,74,30,.12),transparent 70%)}
+
+@media(max-width:700px){
+  .plan-sheet{padding:8px 4px 10px;margin-left:-10px;margin-right:-10px}
+  .plan-entry-name{font-size:1.6rem}
+  .plan-entry-ghost{margin-left:0;width:100%}
+}
