@@ -1,0 +1,313 @@
+{
+  "about": "The Plan of the House: Thomas's ten rooms and twenty-two postings laid on the shared Tree of the Temple of Gu's Techno-Kabbalah. Names, themes, seeds and meditations are Thomas's own (from philipryandeal/iron-ledger-game). Station placement and wiring agreed by Thomas, 10 October 2026. The stations are the hidden key: they ghost beneath the rooms like a watermark, never as signage.",
+  "stations": {
+    "kether": [
+      0,
+      0
+    ],
+    "chokmah": [
+      1,
+      1
+    ],
+    "binah": [
+      -1,
+      1
+    ],
+    "chesed": [
+      1,
+      3
+    ],
+    "gevurah": [
+      -1,
+      3
+    ],
+    "tiphereth": [
+      0,
+      4
+    ],
+    "netzach": [
+      1,
+      5
+    ],
+    "hod": [
+      -1,
+      5
+    ],
+    "yesod": [
+      0,
+      6
+    ],
+    "malkuth": [
+      0,
+      8
+    ]
+  },
+  "station_names": {
+    "kether": "Kether",
+    "chokmah": "Chokmah",
+    "binah": "Binah",
+    "chesed": "Chesed",
+    "gevurah": "Gevurah",
+    "tiphereth": "Tiphereth",
+    "netzach": "Netzach",
+    "hod": "Hod",
+    "yesod": "Yesod",
+    "malkuth": "Malkuth"
+  },
+  "rooms": [
+    {
+      "n": 1,
+      "name": "The Widow's Pantry",
+      "theme": "What is kept.",
+      "station": "malkuth",
+      "seed": "A pantry shelf holds jars no one has counted in years. The widow is gone; the keeping remains. The Keeper learns the first lesson: before the case, the bay leaf. Before the entry, the witnessing.",
+      "written": true,
+      "href": "game.html#room-one"
+    },
+    {
+      "n": 2,
+      "name": "The Counting Room",
+      "theme": "Honest number.",
+      "station": "yesod",
+      "seed": "A till that has never been short and never been true. The coins are all here; the count is all wrong. The Keeper learns to count without lying to themselves — because the books can smell fear.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 3,
+      "name": "The Debtor's Door",
+      "theme": "Obligation.",
+      "station": "hod",
+      "seed": "A door with names chalked on both sides — those who owe, and those who are owed. Some of the names are the Keeper's. Debt is not a sin here; it is a relationship. The question is never *whether* you owe, but *whom*, and *what*.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 4,
+      "name": "The Hall of Postings",
+      "theme": "The record.",
+      "station": "netzach",
+      "seed": "A hall where every movement of the house is written down as it happens — nothing moves unwitnessed. But someone has been moving between the lines. The Keeper must find the entry that was never posted, and post it true.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 5,
+      "name": "The Trial Balance",
+      "theme": "Reckoning.",
+      "station": "tiphereth",
+      "seed": "The chamber where everything must balance or nothing does. The Keeper lays every debit against every credit of the rooms behind them — and discovers one imbalance that cannot be fixed with arithmetic. Some debts are not numerical.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 6,
+      "name": "The Archive of Hands",
+      "theme": "Inheritance.",
+      "station": "binah",
+      "seed": "Every Keeper who held the books before you, shelf after shelf of ledgers in hands you will never shake. The archive persists — including the rulings they got wrong. You get to audit your predecessors. Be kind. You are someone's predecessor too.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 7,
+      "name": "The Forge Ledger",
+      "theme": "Transformation.",
+      "station": "gevurah",
+      "seed": "Where iron and ink meet, and the books are worked like metal — heated, hammered, quenched. Some entries cannot be written cold; they must be forged. The Keeper learns that recording can be an act of making, not just remembering.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 8,
+      "name": "The Room of the Refused Entry",
+      "theme": "Mercy.",
+      "station": "chesed",
+      "seed": "What the books would not take. Entries offered and refused, debts written off, names the ledger declined to hold. The Keeper learns the hardest doctrine: the right to refuse is sacred — and mercy, too, must be recorded, or it never happened.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 9,
+      "name": "The Vow Chamber",
+      "theme": "Covenant.",
+      "station": "chokmah",
+      "seed": "A bare room with a single chair. Here the Keeper speaks the vow aloud — and discovers it binds both ways. The books promise the Keeper something too. Say it true, for the archive is listening, and it will hold you to every word.",
+      "written": false,
+      "href": null
+    },
+    {
+      "n": 10,
+      "name": "The Closing Entry",
+      "theme": "Return.",
+      "station": "kether",
+      "seed": "The final balancing. Every room behind you, every entry, every refusal, every mercy — laid down in one last posting. The books close. The Keeper walks out changed, and the house, at last, rests. *The book is closed, but the keeping continues.*",
+      "written": false,
+      "href": null
+    }
+  ],
+  "postings": [
+    {
+      "n": 1,
+      "name": "The First Count",
+      "from": 1,
+      "to": 2,
+      "meditation": "What is kept must first be counted. The Keeper carries the jars' tally from the shelf to the till and learns the first arithmetic of the house: keeping is not the same as knowing. Count them. Count them again. The second count is the true one."
+    },
+    {
+      "n": 2,
+      "name": "The Owed Tally",
+      "from": 2,
+      "to": 3,
+      "meditation": "Every honest number eventually knocks. The count leads the Keeper to the door where the numbers have names attached — and every coin counted is revealed to be someone's promise. To count truly is to discover whom you owe."
+    },
+    {
+      "n": 3,
+      "name": "The Entered Debt",
+      "from": 3,
+      "to": 4,
+      "meditation": "Obligation, once named, must be written. The Keeper takes the chalked names from the door and posts them in the hall, where they become entries — permanent, witnessable, binding. What is written can be faced. What is only chalked can be rained away."
+    },
+    {
+      "n": 4,
+      "name": "The Weighed Page",
+      "from": 4,
+      "to": 5,
+      "meditation": "The record, complete, is carried to the scales. Every posting the Keeper has made is laid against its other side. The walk itself is the weighing: with each step, ask of every entry — *does it hold?*"
+    },
+    {
+      "n": 5,
+      "name": "The Audited Past",
+      "from": 5,
+      "to": 6,
+      "meditation": "Reckoning opens the archive. The Keeper, having weighed their own books, is ready to weigh the hands before them — not to judge the predecessors, but to understand them. Every imbalance you found in yourself, they found first."
+    },
+    {
+      "n": 6,
+      "name": "The Reforged Record",
+      "from": 6,
+      "to": 7,
+      "meditation": "Inheritance is not enough; it must be reworked. The Keeper takes the old ledgers into the forge, where heat and hammer teach that the past is not a chain but a material. What did they get wrong? Reforge it. What did they get right? Quench it and keep it."
+    },
+    {
+      "n": 7,
+      "name": "The Declined Entry",
+      "from": 7,
+      "to": 8,
+      "meditation": "Even the forge has things it will not take. The Keeper carries a white-hot entry to the room of refusal and watches the books decline it — gently, finally. Some things are transformed. Some things are released. Learn the difference."
+    },
+    {
+      "n": 8,
+      "name": "The Spoken Bond",
+      "from": 8,
+      "to": 9,
+      "meditation": "Mercy prepares the mouth for the vow. Having learned what the books refuse, the Keeper is ready to say what they will carry. The walk from refusal to covenant is short and steep: leave behind what was declined, arrive empty-handed, speak true."
+    },
+    {
+      "n": 9,
+      "name": "The Final Seal",
+      "from": 9,
+      "to": 10,
+      "meditation": "The vow spoken becomes the seal pressed. The Keeper walks the last path carrying nothing but the promise — and finds that the closing entry was already written, long ago, waiting for someone worthy to post it. Sign it. Mean it. Walk out."
+    },
+    {
+      "n": 10,
+      "name": "The Bequest",
+      "from": 1,
+      "to": 3,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 11,
+      "name": "The True Reckoning",
+      "from": 2,
+      "to": 5,
+      "meditation": "The honest number, carried straight to the scales, skipping every room between. This is the shortcut the house offers only to the brave: weigh your count before you have posted a single debt. If it balances now, everything after is ceremony."
+    },
+    {
+      "n": 12,
+      "name": "The Forgiven Note",
+      "from": 5,
+      "to": 8,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 13,
+      "name": "The Bound Volume",
+      "from": 1,
+      "to": 4,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 14,
+      "name": "The Last Audit",
+      "from": 5,
+      "to": 10,
+      "meditation": "From reckoning directly to return. The Keeper who has truly weighed everything may skip the remaining rooms — the house permits it, once. Carry the balanced scales to the closing entry and post it. Few take this path. Fewer are ready."
+    },
+    {
+      "n": 15,
+      "name": "The Kept Fire",
+      "from": 3,
+      "to": 7,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 16,
+      "name": "The Fair Copy",
+      "from": 2,
+      "to": 4,
+      "meditation": "The honest number, fairly copied into the record. No debts named, no scales consulted — just the clean transcription of what is true. The Keeper learns that some postings are simple, and simplicity, done rightly, is a kind of holiness."
+    },
+    {
+      "n": 17,
+      "name": "The Sworn Debt",
+      "from": 3,
+      "to": 5,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 18,
+      "name": "The Inherited Vow",
+      "from": 6,
+      "to": 9,
+      "meditation": "The predecessors' vow becomes yours. The Keeper reads the old vows in the archive — every Keeper's promise, kept and broken — and walks to the bare room to speak their own. You do not start clean. You start *continued*."
+    },
+    {
+      "n": 19,
+      "name": "The Finished Work",
+      "from": 6,
+      "to": 10,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 20,
+      "name": "The Released Claim",
+      "from": 4,
+      "to": 8,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 21,
+      "name": "The Kept Promise",
+      "from": 5,
+      "to": 9,
+      "meditation": null,
+      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+    },
+    {
+      "n": 22,
+      "name": "The Reworked Balance",
+      "from": 5,
+      "to": 7,
+      "meditation": "The imbalance that cannot be fixed with arithmetic must be reforged. The Keeper carries the unbalanced scales from the reckoning chamber into the fire. Some debts are not numerical. Heat them. Hammer them. Quench them. Post the new shape."
+    }
+  ]
+}
