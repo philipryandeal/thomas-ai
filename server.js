@@ -18,6 +18,17 @@ const CSP = [
   "form-action 'self'",
   "upgrade-insecure-requests"
 ].join('; ');
+// Fixed origin for host redirects (www and the bare *.up.railway.app host). Only the
+// path and query of the request are carried over, so a crafted URL (//evil, /\evil,
+// absolute-form, encoded slashes, CR/LF) can never point off-site.
+const CANONICAL_ROOT = 'https://workisprayer.com/';
+function canonicalUrl(reqUrl) {
+  const incoming = new URL(reqUrl, 'http://localhost');
+  const target = new URL(CANONICAL_ROOT);
+  target.pathname = incoming.pathname;
+  target.search = incoming.search;
+  return target.href;
+}
 const types = { '.html':'text/html; charset=utf-8', '.css':'text/css; charset=utf-8', '.svg':'image/svg+xml', '.png':'image/png', '.ico':'image/x-icon', '.txt':'text/plain; charset=utf-8', '.xml':'application/xml; charset=utf-8' };
 const server = http.createServer(async (req, res) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -26,13 +37,16 @@ const server = http.createServer(async (req, res) => {
   res.setHeader('Content-Security-Policy', CSP);
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
   res.setHeader('X-Frame-Options', 'DENY');
-  if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405, {Allow:'GET, HEAD'}); return res.end('Method not allowed'); }
+  if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405, {Allow:'GET, HEAD', 'Content-Type':'text/plain; charset=utf-8'}); return res.end('Method not allowed'); }
   let pathname;
   try { pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); }
-  catch { res.writeHead(400); return res.end('Bad request'); }
+  catch { res.writeHead(400, {'Content-Type':'text/plain; charset=utf-8'}); return res.end('Bad request'); }
   if (pathname === '/health') { res.writeHead(200, {'Content-Type':'text/plain'}); return res.end(req.method === 'HEAD' ? undefined : 'ok'); }
+  // One front door: www and the bare Railway host forward to workisprayer.com.
+  const host = String(req.headers.host || '').split(':')[0].toLowerCase();
+  if (host === 'www.workisprayer.com' || host.endsWith('.up.railway.app')) { res.writeHead(301, {Location: canonicalUrl(req.url)}); return res.end(); }
   const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
-  if (!file.startsWith(root + path.sep) || pathname.includes('\0')) { res.writeHead(404); return res.end('Not found'); }
+  if (!file.startsWith(root + path.sep) || pathname.includes('\0')) { res.writeHead(404, {'Content-Type':'text/plain; charset=utf-8'}); return res.end('Not found'); }
   try {
     const stat = await fs.promises.stat(file);
     if (!stat.isFile()) throw new Error('Not a file');

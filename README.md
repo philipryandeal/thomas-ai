@@ -37,7 +37,7 @@ The ledger currently contains categories, not verified balances; preserve that d
 
 The included `railway.json` runs `npm start` and checks `/health`. Connect the existing `philipryandeal/thomas-ai` repository, branch `main`, with the repository root as the service root. No secrets are needed to serve this site.
 
-Once the deployment is healthy, add `workisprayer.com` in Railway and copy the exact returned DNS records into Squarespace. Domain ownership alone does not connect DNS. No domain redirects are forced, so the Railway preview stays accessible during setup.
+Once the deployment is healthy, add `workisprayer.com` in Railway and copy the exact returned DNS records into Squarespace. Domain ownership alone does not connect DNS. Now that `workisprayer.com` is live, `www.workisprayer.com` and the bare `*.up.railway.app` host redirect (301) to `https://workisprayer.com`, keeping only the path and query on that fixed origin so crafted URLs cannot redirect off-site. `/health` is exempt for Railway's check. `public/favicon.ico` is rendered from `public/emblem.svg`.
 
 ## Assets and provenance
 
