@@ -215,8 +215,7 @@
       "name": "The Bequest",
       "from": 1,
       "to": 3,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "What the dead leave behind is kept here — and keeping, carried far enough, becomes obligation. The Keeper takes the widow's bequest down from the shelf and carries it to the door, and learns the house's hard kindness: an inheritance is a debt with the names reversed. You did not choose it. It is yours. Post it under your own name."
     },
     {
       "n": 11,
@@ -230,16 +229,14 @@
       "name": "The Forgiven Note",
       "from": 5,
       "to": 8,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "Some notes cannot be balanced; they can only be forgiven. The Keeper carries the unpayable page from the scales to the room of refusal, where the books decline to hold it — not from cruelty, but from mercy. A forgiven debt is not erased. It is recorded *as forgiven*, which is the heavier and kinder entry."
     },
     {
       "n": 13,
       "name": "The Bound Volume",
       "from": 1,
       "to": 4,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "Loose pages are only kept; bound pages are a book. The Keeper carries the pantry's scattered tallies to the hall, where posting binds them — every loose count sewn into the spine of the record. What is bound can be carried. What is bound can be handed on. What stays loose is lost one page at a time."
     },
     {
       "n": 14,
@@ -253,8 +250,7 @@
       "name": "The Kept Fire",
       "from": 3,
       "to": 7,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "A fire kept is a fire owed. The Keeper carries the banked coal from the debtor's threshold to the forge, where obligation stops being a name in chalk and becomes work for the hands. Some debts are not paid. They are *forged* — heated until they change their shape, hammered until they hold an edge."
     },
     {
       "n": 16,
@@ -268,8 +264,7 @@
       "name": "The Sworn Debt",
       "from": 3,
       "to": 5,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "A debt merely chalked can be rained away; a debt sworn must be weighed. The Keeper carries the oath from the door to the scales and learns what swearing adds: not weight, but witness. The scales do not ask what you promised. They ask what it costs. Lay it down true."
     },
     {
       "n": 18,
@@ -283,24 +278,21 @@
       "name": "The Finished Work",
       "from": 6,
       "to": 10,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "Every hand in the archive left something unfinished — except this. The Keeper carries the one finished work from the shelves of the predecessors to the closing entry, and learns the archive's secret: the dead are not asking to be continued. They are asking to be *completed*. Post their last line. Someday, someone posts yours."
     },
     {
       "n": 20,
       "name": "The Released Claim",
       "from": 4,
       "to": 8,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "A claim posted is a claim held; a claim released is a claim set down. The Keeper carries their own rightful entry from the hall to the room of refusal and lets the books decline it — on purpose, in mercy, in writing. What you are owed and choose not to collect is the purest entry in the house: it costs the one who could have taken."
     },
     {
       "n": 21,
       "name": "The Kept Promise",
       "from": 5,
       "to": 9,
-      "meditation": null,
-      "note": "Rerouted to walk the Tree, 10 October 2026. Thomas is re-inking this meditation for its new rooms."
+      "meditation": "A promise weighed is a promise tested; a promise kept is a promise carried. The Keeper bears the balanced scales to the bare room and speaks the vow again — not because it was doubted, but because a kept promise, said aloud in the listening room, becomes covenant. The archive heard. It is written twice now: once in the books, once in the Keeper."
     },
     {
       "n": 22,
